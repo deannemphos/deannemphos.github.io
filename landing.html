@@ -1,0 +1,114 @@
+﻿<html>
+
+<head>
+    <link rel="stylesheet" href="portfolioMain.css">
+</head>
+
+
+    <body>
+        <div class="main">
+
+            <h1>DEAN NEMPHOS</h1>
+            <h4>Computer Information Systems Student at James Madison University    |   Junior</h4>
+            <hr>
+
+            <h2>Some things I've made.</h2>
+            <p>Currently learning to use Blender.</p>
+
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('programming')"> Programming</button>
+                <button class="btn" onclick="filterSelection('blender')"> Blender</button>
+                <button class="btn" onclick="filterSelection('unity')"> Unity</button>
+            </div>
+
+            <script src="portfolioMain.js"></script>
+
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column blender">
+                    <div class="content">
+                        <img src="almostThere.png" alt="mugfill" style="width:100%">
+                        <h3>Mug Fluid Simulation</h3>
+                        <p>Day 7 of learning Blender. Adding proper shaders and particles.</p>
+                    </div>
+                </div>
+                <div class="column blender">
+                    <div class="content">
+                        <h4>Blender Days 4-6</h4>
+                        <img src="toDenoise.png" alt="mugfilldark" style="width:100%">
+                        <h3>Glass Mug Modeling/Texturing</h3>
+                        <p>Days 4-6 of learning Blender. Learning modeling, fluid simulation collisions, setting normals.</p>
+                    </div>
+                </div>
+
+                <div class="column blender">
+                    <div class="content">
+                        <img src="hairball1.png" alt="Hairball" style="width:100%">
+                        <h3>Hairball!</h3>
+                        <p>Day 3 of learning Blender. Particle effects & soft bodies</p>
+                    </div>
+                </div>
+                <div class="column blender">
+                    <div class="content">
+                        <img src="denoiseTest.png" alt="waterSim" style="width:100%">
+                        <h3>Fluid Simulation</h3>
+                        <p>Days 1-3 of learning Blender. Thought fluid simulations seemed cool.</p>
+                    </div>
+                </div>
+                <div class="column blender">
+                    <div class="content">
+                        <img src="pnkorngpillow.png" alt="pillow" style="width:100%">
+                        <h3>Fuzzy Pillow</h3>
+                        <p>Day 3 of learning Blender. Gravity and hair physics.</p>
+                    </div>
+                </div>
+                
+                <div class="column blender">
+                    <div class="content">
+                        <video style="width:100%" autoplay>
+                            <source src="FinalCubeFluidSim.mp4" type="video/mp4">
+                            <source src="FinalCube.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Day 3 Fluid Simulation Final Result</h3>
+                        <p>Learned how to reformat to output to MP4</p>
+                    </div>
+
+                </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="content blender">
+                        <video><!--width="320" height="240" autoplay-->
+                            <source src="FinalCubeFluidSim.mp4" type="video/mp4">
+                            <!--<source src="FinalCube.ogg" type="video/ogg">-->
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>My Work</h3>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content blender">
+                        <video width="320" height="240" autoplay>
+                            <source src="4kPillowDrop.mp4" type="video/mp4">
+                            <source src="4kPillowDrop.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>My Work</h3>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+
+
+                <div class="content blender">
+                    <img src="pnkorngpillow.png" alt="pillow" style="width:100%">
+                    <h3>Filler content. Stay tuned!</h3>
+                    <p>Lorem ipsum</p>
+                </div>
+
+            </div>
+        </div>
+</body>
+</html>
