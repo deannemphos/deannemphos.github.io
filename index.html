@@ -21,11 +21,17 @@
 
     <nav id="selectBar">
         <ul>
-
+        <!--
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="#work">My Work</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#contact">Contact Me</a></li>
+        -->
+            <button class="tablinks" onclick="openTab(event, 'home')" id="defaultOpen">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'mywork')">My Work</button>
+            <button class="tablinks" onclick="openTab(event, 'ltle')">LTLE 377</button>
+            <button class="tablinks" onclick="openTab(event, 'about')">About Me</button>
+            <button class="tablinks" onclick="openTab(event, 'contact')">Contact Me</button>
         </ul>
     </nav>
 
@@ -36,7 +42,32 @@
         <p>Lorum ipsum dolor son amet</p>
     </article>
     -->
-    <div class="articleContainer" id="aboutMe">
+
+    <div id="ltle" class="tabcontent">
+        <article>
+            <h2 class="articleTitle">K-12 Client Partner Project</h2>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQfexiWOdYP321hsUG9R9dSveAxUdHjxWiOsLas_uH34WePTbG3gsdME1LhWv7V_Gl_jcj7Rcf0yzxC/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <p>
+
+            </p>
+        </article>
+        
+    </div>
+
+    <div id="mywork" class="tabcontent">
+        <div class="articleContainer">
+            <article>
+                <h2 class="articleTitle">Welcome!</h2>
+                <div class="imgContainter">
+                    <img src="photos/3CubeWater copy.png" class="articleImage">
+                    <img src="photos/Screen Shot 2021-04-13 at 5.07.14 PM.png" class="articleImage">
+                    <video src="photos/BallZoom.mp4" class="articleImage">
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div id="about" class="tabcontent">
         <article>
             <h2 class="articleTitle">About Me</h2>
             <p>&emsp;&emsp;Hi! My name is Dean Nemphos and I'm a student located at James Madison University originally from the wonderful town of Berlin, Connecticut. 
@@ -52,13 +83,15 @@
         <img src="photos/Me.jpg" class="articleImage" alt="Photo of me sitting on a rock at the top of a mountain">
     </div>
 
-    <div class="articleContainer" id="Contact">
+    <div id="contact" class="tabcontent">
         <article>
             <h2 class="articleTitle">Contact Me!</h2>
                 <p>Email me at nemphodc@dukes.jmu.edu<br><br>Connect with me <a id="mediaLinks" href="https://www.linkedin.com/in/dean-nemphos/">on LinkedIn</a>
                 <br><br>Check out my <a id="mediaLinks" href="https://github.com/deannemphos">Github</a></p>
         </article>
     </div>
+
+    
 
     </main> 
 </body>
