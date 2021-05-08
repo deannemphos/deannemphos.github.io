@@ -1,20 +1,24 @@
-function onTabClick(event) {
-    let activeTabs = document.querySelectorAll('.active');
-    
-    // deactivate existing active tab and panel
-    // for( let i = 0; i < activeTabs.length; i++) {
-    //   activeTabs[i].className = activeTabs[i].className.replace('active', '');
-    // }
-    
-    activeTabs.forEach(function(tab) {
-      tab.className = tab.className.replace('active', '');
-    });
-    
-    // activate new tab and panel
-    event.target.parentElement.className += ' active';
-    document.getElementById(event.target.href.split('#')[1]).className += ' active';
+
+
+function openTab(evt, tabName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
-  
-  const element = document.getElementById('nav-tab');
-  
-  element.addEventListener('click', onTabClick, false);
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();

@@ -135,7 +135,7 @@ ul {
           justify-content: center;
 }
 
-li {
+button {
   margin-left: 0;
   margin-right: 0;
   list-style: none;
@@ -161,6 +161,67 @@ li {
   to {
     color: #ececec;
   }
+}
+
+@keyframes colorShift {
+  from {
+    color: #D8D2D2;
+  }
+  to {
+    color: #ececec;
+  }
+}
+
+button:hover {
+  background-color: #2e252d;
+  color: #D8D2D2;
+  border-bottom: .1em solid #ececec;
+  border-right: 1 solid transparent;
+  -webkit-animation: colorShift 0.5s;
+          animation: colorShift 0.5s;
+  color: #ececec;
+  /*
+    border-bottom: 5px solid #d8d2d2;
+    border-radius: .4em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    */
+}
+
+/*
+li:hover::before {
+    content: "";
+    position: absolute;
+
+    background-color: transparent;
+    bottom: -50px;
+    height: 50px;
+    width: 25px;
+    border-top-left-radius: 25px;
+    box-shadow: 0px -25px 0 0 #F66969;
+}
+*/
+button:last-child {
+  border-right: none;
+}
+
+li {
+  margin-left: 0;
+  margin-right: 0;
+  list-style: none;
+  float: left;
+  padding: 1.1em 1em 1em 1em;
+  background-color: #594358;
+  color: #d8d2d2;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: .1em solid transparent;
+  border-right: 1px solid #3E313C;
+  /*
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    */
+  border-radius: 0;
 }
 
 @keyframes colorShift {
@@ -283,5 +344,17 @@ article {
 
 #mediaLinks {
   color: #BF5A75;
+}
+
+.imgContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  float: left;
+}
+
+.tabcontent {
+  display: none;
 }
 /*# sourceMappingURL=PortfolioSite.css.map */
